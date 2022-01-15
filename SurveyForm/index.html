@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="survey.css">
+  <title>FCC : Survey Form</title>
+</head>
+<body>
+  <h1 id="title" class="txt-center txt-white">Survey Form</h1>
+  <p id="description" class="txt-center txt-white">Thank you for taking the time to help us improve the platform</p>
+
+  <form id="survey-form" class="container">
+    <label id="name-label" for="name">
+      Name
+      <input type="text" id="name" placeholder="Enter your name" required>
+    </label>
+    <label id="email-label" for="email">
+      Email
+      <input type="email" id="email"  placeholder="Enter your email" required>
+    </label>
+    <label id="number-label" for="number">
+      Age
+      <input type="number" id="number" placeholder="Age" min="17" max="65">
+    </label>
+    <div class="input-group">
+      <p>Which option best describes your current role?</p>
+      <select name="role" id="dropdown">
+        <option value="student">Student</option>
+        <option value="fultimejob">Full Time Job</option>
+        <option value="fulltimelearner">Full Time Learner</option>
+        <option value="nottosay">Prefer Not To Say</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    <div class="input-group radio-group">
+      <p>Would you recommend freeCodeCamp to a friend?</p>
+      <label id="reference-label" for="definetely">
+        <input type="radio" name="reference" id="definetely" value="definetely" class="input-radio">Definetely
+      </label>
+      <label id="reference-label" for="maybe">
+        <input type="radio" name="reference" id="maybe" value="maybe" class="input-radio">Maybe
+      </label>
+      <label id="reference-label" for="notsure">
+        <input type="radio" name="reference" id="notsure" value="notsure" class="input-radio">Not Sure
+      </label>
+    </div>
+    <div class="input-group checkbox-group">
+      <p>What would you like to see improved? <span class="clue">(Check all that apply)</span></p>
+      <label for="opt1">
+        <input type="checkbox" name="feature" id="opt1" value="opt1" class="input-checkbox"> Front-end Projects
+      </label>
+      <label for="opt2">
+        <input type="checkbox" name="feature" id="opt2" value="opt2" class="input-checkbox"> Back-end Projects
+      </label>
+    </div>
+    <label for="anyinput" class="input-group">
+      Any comments or suggestions?
+      <textarea name="anyinput" id="anyinput" cols="30" rows="10" class="comment"></textarea>
+    </label>
+    <input type="submit" id="submit" value="Submit Data">
+  </form>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
