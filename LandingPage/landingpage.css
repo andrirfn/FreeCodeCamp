@@ -144,9 +144,8 @@ p {
 #video {
   margin-top: 70px;
   width: 100%;
-  --container-width: 960px;
   --ratio: calc(16 / 9); /* 1.77 */
-  height: calc(var(--container-width) / var(--ratio));
+  height: calc(100vw / var(--ratio));
 }
 
 .pricing {
@@ -233,11 +232,5 @@ p {
 
   #feature {
     padding: 10px;
-  }
-
-  #video {
-    --container-width: 100%;
-    --ratio: calc(16 / 9); /* 1.77 */
-    height: calc(var(--container-width) / var(--ratio));
   }
 }
